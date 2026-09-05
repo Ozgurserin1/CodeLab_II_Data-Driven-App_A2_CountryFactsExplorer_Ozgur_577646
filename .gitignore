@@ -1,0 +1,13 @@
+# Local settings and runtime data
+**/bin/data/settings.json
+**/bin/data/favourites.json
+
+# Visual Studio temporary files
+**/.vs/
+**/obj/
+**/*.user
+
+# Local build output
+**/bin/*.exe
+**/bin/*.pdb
+**/bin/*.ilk
