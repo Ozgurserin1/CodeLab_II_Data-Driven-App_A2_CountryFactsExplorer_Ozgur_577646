@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ResourceCompile Include="icon.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\Button.cpp" />
+    <ClCompile Include="src\Country.cpp" />
+    <ClCompile Include="src\CountryService.cpp" />
+    <ClCompile Include="src\main.cpp" />
+    <ClCompile Include="src\ofApp.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="src\Button.h" />
+    <ClInclude Include="src\Country.h" />
+    <ClInclude Include="src\CountryService.h" />
+    <ClInclude Include="src\ofApp.h" />
+  </ItemGroup>
+</Project>

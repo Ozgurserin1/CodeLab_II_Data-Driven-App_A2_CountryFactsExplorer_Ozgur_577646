@@ -1,0 +1,7 @@
+World map source:
+"Equirectangular projection world map without borders" by Ebrahim.
+Source: https://commons.wikimedia.org/wiki/File:Equirectangular_projection_world_map_without_borders.svg
+License: Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)
+https://creativecommons.org/licenses/by-sa/4.0/
+
+The source SVG was rasterised and recoloured for this coursework interface.
