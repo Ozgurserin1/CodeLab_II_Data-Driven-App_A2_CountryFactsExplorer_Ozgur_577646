@@ -4,6 +4,8 @@ Country Facts Explorer is a C++ openFrameworks data-driven application that uses
 
 The project was created for the CodeLab II Data Driven App assessment.
 
+![Country Facts Explorer](country-facts-explorer.png)
+
 ## Features
 
 - Search for a country by name
