@@ -21,7 +21,8 @@ The project was created for the CodeLab II Data Driven App assessment.
 - Open countries from favourites and recent searches
 - Random country search
 - Light and dark themes
-- Error message for invalid country searches
+- Loading, success and error states
+- Error handling for invalid country searches
 - Empty search validation
 - Keyboard support using Enter and Esc
 - Responsive layout for different window sizes
@@ -32,8 +33,24 @@ The project was created for the CodeLab II Data Driven App assessment.
 - openFrameworks
 - REST Countries API
 - JSON data
-- HTTP requests
+- Asynchronous HTTP requests
+- Object-oriented programming
+- C++ vectors
+- Local JSON file handling
 - Visual Studio
+
+## Technical Implementation
+
+The application separates the main responsibilities into different classes:
+
+- `Country` stores the country information returned by the API.
+- `CountryService` loads the API settings, builds the request URL and parses the returned JSON data.
+- `Button` represents clickable interface buttons.
+- `ofApp` manages the main interface, user input and application behaviour.
+
+Country requests are sent asynchronously using openFrameworks. The application uses `Idle`, `Loading`, `Success` and `Error` states to control the interface while a search is being processed.
+
+Recent searches and favourites are stored using C++ vectors. Favourites are also saved to a local JSON file so that they remain available after restarting the application.
 
 ## Project Structure
 
@@ -54,6 +71,9 @@ Data Driven App/
     ├── bin/
     │   └── data/
     │       ├── fonts/
+    │       │   ├── DejaVuSans.ttf
+    │       │   ├── DejaVuSans-Bold.ttf
+    │       │   └── FONT_LICENSE.txt
     │       ├── world_map.png
     │       ├── MAP_SOURCE.txt
     │       └── settings.example.json
@@ -113,25 +133,28 @@ These files are excluded using the `.gitignore` file.
 
 ## Testing
 
-The application was tested using valid and invalid country searches.
+The application was tested during development and again after the final changes.
 
-Testing also included:
+Testing included:
 
+- Valid country searches
+- Invalid country searches
 - Empty searches
 - Country information
 - Currency information
-- Flags
+- Country flags
 - World map locations
-- Favourites
-- Saved favourites after restarting
+- Adding and removing favourites
+- Favourite persistence after restarting the application
 - Recent searches
 - Duplicate recent searches
-- Random searches
+- Random country searches
 - Light and dark themes
 - Keyboard controls
 - Small and large window sizes
+- Final Visual Studio rebuild
 
-The final application builds and runs successfully in Visual Studio.
+The final Visual Studio rebuild completed successfully with two succeeded projects and zero failed projects.
 
 ## Sources
 
